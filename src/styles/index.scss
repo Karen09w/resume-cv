@@ -1,0 +1,16 @@
+// GLOBALS
+@import "./scss/fonts";
+@import "./scss/features";
+@import './scss/global';
+
+// COMPONENTS
+@import '../components/navbar/navbar';
+@import '../components/header/header';
+@import '../components/footer/footer';
+@import '../components/buttons/button';
+@import '../components/fields/field';
+
+// PAGES
+@import '../pages/home/home';
+@import '../pages/about/about';
+@import '../pages/error/error';
