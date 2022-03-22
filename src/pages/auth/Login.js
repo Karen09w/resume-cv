@@ -1,5 +1,5 @@
-import React, { useContext, useState } from "react";
-import { Context } from "../../context";
+import React, {  useState } from "react";
+import { useGlobalContext } from "../../context";
 import { Link } from "react-router-dom";
 import { Field } from "../../components";
 
@@ -10,7 +10,7 @@ export default function Login() {
     ]);
 
     const [isSubmitted, setIsSubmitted] = useState(false);
-    const {  globalOnSubmitHandler, globalOnChangeHandler } = useContext(Context);
+    const {  globalOnSubmitHandler, globalOnChangeHandler } = useGlobalContext()
 
     const onSubmitHandler = (e) => {
         e.preventDefault();

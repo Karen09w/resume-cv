@@ -1,12 +1,12 @@
-import React, { useContext, useEffect, useState } from "react";
-import { Context } from "../../context";
+import React, {  useEffect, useState } from "react";
+import { useGlobalContext } from "../../context";
 import { useParams, useNavigate } from "react-router-dom";
 import { Spinner } from "../../components";
 
 export default function Error() {
     const [data, setData] = useState({});
 
-    const { error } = useContext(Context).localData.pages;
+    const { error } = useGlobalContext().localData.pages;
 
     const params = useParams();
     const navigate = useNavigate();

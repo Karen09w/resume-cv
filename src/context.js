@@ -1,5 +1,5 @@
 import { default as formSetup } from "./utils/formSetup.js";
-import React, { useState, useEffect, createContext } from "react";
+import React, { useState, useEffect, createContext,useContext } from "react";
 import { useLocation } from "react-router-dom";
 import localData from "./localData";
 export const Context = createContext();
@@ -34,3 +34,5 @@ export default function Provider({ children }) {
         </Context.Provider>
     );
 }
+
+export const useGlobalContext = () => useContext(Context);
