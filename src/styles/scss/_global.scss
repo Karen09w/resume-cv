@@ -106,8 +106,21 @@ img {
 }
 
 section > .container {
-    max-width: 1140px;
-
+    @include mq(576px) {
+        max-width:540px; // 36
+    }
+    @include mq(768px) {
+        max-width:720px; // 48
+    }
+    @include mq(992px) {
+        max-width:960px; // 32
+    }
+    @include mq(1200px) {
+        max-width: 1140px; // 60
+    }
+    @include mq(1400px) {
+        max-width: 1320px; // 80
+    }
     @include mq(1920px) {
         max-width: mw(xl); //full hd
     }
@@ -164,7 +177,7 @@ section > .container {
         @include df;
     }
     &-pill {
-        border-radius: 10rem;
+        border-radius: 50rem !important;
     }
 }
 
@@ -369,17 +382,33 @@ section > .container {
 
 .d {
     &-none {
-        display: none;
+        display: none !important;
     }
     &-block {
-        display: block;
+        display: block !important; 
+        width: 100%; //button tags not extending
     }
     &-flex {
-        display: flex;
+        display: flex !important;
     }
 }
 
 // TEMPORARY
+
+// BADGE 
+
+.badge {
+    display: inline-block;
+    padding: 0.35em 0.65em;
+    font-size: .75em;
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+}
 
 main {
     min-height: 500px;
