@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
 import localData from "../../localData";
-import { Button,Field } from "../../components";
+import { Button, Field } from "../../components";
 
 export default function Navbar() {
     const location = useLocation();
@@ -13,7 +13,7 @@ export default function Navbar() {
     ];
 
     const { togglerIcon } = localData.navbar;
-    const { telegram } = localData.unsubscribe
+    const { telegram } = localData.unsubscribe;
 
     const [isCollapsing, setIsCollapsing] = useState(false);
     const [isShown, setIsShown] = useState(false);
@@ -27,6 +27,12 @@ export default function Navbar() {
         setIsShown(!isShown);
     }, [isCollapsing]);
 
+    const getHeight = () => {
+        let computedHeight = null;
+        [...navbarCollapse.current.children].forEach((each) => (computedHeight += getAbsoluteHeight(each)));
+        return computedHeight + "px";
+    };
+
     const getAbsoluteHeight = (el) => {
         el = typeof el === "string" ? document.querySelector(el) : el;
 
@@ -36,7 +42,6 @@ export default function Navbar() {
 
         return Math.ceil(el.offsetHeight + margin + border);
     };
-    
 
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -56,16 +61,7 @@ export default function Navbar() {
                     className={`navbar-collapse ${isCollapsing ? "collapsing" : "collapse"} ${isShown ? "show" : ""}`}
                     id="navbarSupportedContent"
                     onTransitionEnd={() => setIsCollapsing(false)}
-                    style={
-                        isShown && isCollapsing
-                            ? {
-                                  height:
-                                      getAbsoluteHeight(navbarCollapse.current.children[0]) +
-                                      getAbsoluteHeight(navbarCollapse.current.children[1]) +
-                                      "px",
-                              }
-                            : {}
-                    }
+                    style={isShown && isCollapsing ? { height: getHeight() } : {}}
                 >
                     <ul className="navbar-nav me-auto">
                         {navs.map((item, index) => {
