@@ -1,4 +1,4 @@
-//<!-- COLORS
+// COLORS
 $colors: (
     primary: rgb(25, 118, 210),
     primary-v2: rgb(21, 101, 192),
@@ -19,52 +19,51 @@ $colors: (
 @function color($property: primary) {
     @return map-get($colors, $property);
 }
-// -->
+//
 
-//<!--  FONT SIZES
+//  FONT SIZES
 $fontSizes: (
     sm: 0.8rem,
     md: 1rem,
-    lg:1.2rem
+    lg: 1.2rem,
 );
 
 @function fontSize($property: md) {
     @return map-get($fontSizes, $property);
 }
-//-->
+//
 
-//<!-- GRADIENTS
+// GRADIENTS
 $gradients: (
-    primary: linear-gradient(180deg,color(info),color(success))
+    primary: linear-gradient(180deg, color(info), color(success)),
 );
 
-@function gradient($property: primary){
-    @return map-get($gradients,$property);
+@function gradient($property: primary) {
+    @return map-get($gradients, $property);
 }
 
-// <--
+// 
 
-
-//<!-- SHADOWS
+// SHADOWS
 $shadows: (
-    success:0 3px 10px rgba(37,174,21,1)
+    success: 0 3px 10px rgba(37, 174, 21, 1),
 );
 
-@function shadow($property: success){
-    @return map-get($shadows,$property);
+@function shadow($property: success) {
+    @return map-get($shadows, $property);
 }
 
-// <--
+// 
 
-//<!-- BREAKPOINTS
+// BREAKPOINTS
 $grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px,
-  xxxl: 3840px
+    xs: 0,
+    sm: 576px,
+    md: 768px,
+    lg: 992px,
+    xl: 1200px,
+    xxl: 1400px,
+    xxxl: 3840px,
 );
 
 @mixin mq($size: 768px) {
@@ -76,7 +75,7 @@ $grid-breakpoints: (
 @function breakpoint($property: md) {
     @return map-get($grid-breakpoints, $property);
 }
-// -->
+//
 
 @mixin df($horizontal: center, $vertical: center) {
     display: flex;
