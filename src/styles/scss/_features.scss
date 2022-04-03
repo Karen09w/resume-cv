@@ -1,31 +1,35 @@
 // COLORS
 $colors: (
-    primary: rgb(25, 118, 210),
-    primary-v2: rgb(21, 101, 192),
-    info: rgb(13, 202, 240),
-    success: rgb(46, 125, 50),
-    success-v2: rgb(27, 94, 32),
-    warning: rgb(237, 108, 2),
-    warning-v2: rgb(202, 91, 0),
-    danger: rgb(211, 47, 47),
-    danger-v2: rgb(188, 22, 22),
-    dark: rgb(33, 37, 41),
-    secondary: rgb(108, 117, 125),
-    secondary-v2: rgb(85, 91, 96),
-    light: rgb(248, 249, 250),
-    muted: rgb(108, 117, 125),
+    primary: '25, 118, 210',               
+    primary-v2: '21, 101, 192',
+    info: '13, 202, 240',
+    success: '46, 125, 50',
+    success-v2: '27, 94, 32',
+    warning: '237, 108, 2',
+    warning-v2: '202, 91, 0',
+    danger: '211, 47, 47',
+    danger-v2: '188, 22, 22',
+    dark: '33, 37, 41',
+    secondary: '108, 117, 125',
+    secondary-v2: '85, 91, 96',
+    light: '248, 249, 250',
+    light-v2: '243, 243, 243',
+    muted: '108, 117, 125',
+    gold: '148, 113, 79',
 );
 
-@function color($property: primary) {
-    @return map-get($colors, $property);
+@function color($property: primary, $a: 1) {
+    $color: map-get($colors, $property);
+    @return #{'rgba(#{$color},#{$a})'};
 }
 //
 
 //  FONT SIZES
 $fontSizes: (
-    sm: 0.8rem,
+    sm: 0.9rem,
     md: 1rem,
-    lg: 1.2rem,
+    lg: 1.1rem,
+    xl: 1.5rem,
 );
 
 @function fontSize($property: md) {

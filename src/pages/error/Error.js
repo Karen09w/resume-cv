@@ -19,7 +19,7 @@ export default function Error() {
     if (!data || !Object.entries(data).length) return <Spinner />;
     return (
         <div className="error">
-            <a onClick={() => navigate(-1)} className="btn btn-primary">
+            <a onClick={() => navigate(-1)} className="link-primary" >
                 return
             </a>
             <img src={data.cover} alt={[data.cover]} />

@@ -3,7 +3,7 @@ import { validation } from "./validate.js";
 export default (function formSetup() {
     const decodeForm = (form) => {
         const decodeForm = {};
-        form.forEach((field) => (decodeForm[field.name] = field.value));
+        form.forEach((field) => (decodeForm[field.name] = field.value) || null);
         return decodeForm;
     };
 
@@ -26,6 +26,7 @@ export default (function formSetup() {
         const { name, value } = e.target;
         if (!decodedForm) decodedForm = { [name]: value };
         const { error } = validation.createValidation(decodedForm);
+     
 
         const tempForm = [...form];
         const index = tempForm.indexOf(field);
@@ -34,6 +35,7 @@ export default (function formSetup() {
         tempForm[index].invalidFeedback = error ? true : false;
         tempForm[index].message = error ? error.details[1]?.message || error.details[0]?.message : "";
         setForm(tempForm);
+        
     };
 
     return { decodeForm, globalOnSubmitHandler, globalOnChangeHandler };

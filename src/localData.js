@@ -1,4 +1,7 @@
 import ufo from "./assets/images/ufo.png";
+import project1 from './assets/images/projects/8121cd0609b8412497001bae77b1af31.webp'
+import project2 from './assets/images/projects/brendan-church-9F3sEV1-Iog-unsplash.webp'
+import project3 from './assets/images/projects/Fashion Magazine.webp'
 
 const localData = {
     navbar: {
@@ -31,7 +34,24 @@ const localData = {
             },
         },
     },
-    unsubscribe: {
+    projects: [
+        {
+            name: "project name 0",
+            text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you",
+            cover: project1
+        },
+        {
+            name: "project name 1",
+            text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you",
+            cover: project2
+        },
+        {
+            name: "project name 2",
+            text: "I'm a paragraph. Click here to add your own text and edit me. It’s easy. Just click “Edit Text” or double click me to add your own content and make changes to the font. I’m a great place for you to tell a story and let your users know a little more about you",
+            cover: project3
+        },
+    ],
+    unsubscribed: {
         telegram: (
             <svg
                 className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv"

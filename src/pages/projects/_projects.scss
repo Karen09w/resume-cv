@@ -1,0 +1,11 @@
+.projects {
+    padding-top: 6rem;
+    
+}
+
+@media screen and (min-width: 768px) {
+    .projects {
+        min-height: 100vh;
+        padding-top: 11rem;
+    }
+}

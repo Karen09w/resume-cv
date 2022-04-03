@@ -9,6 +9,9 @@ export { default as Field} from './fields/Field.js'
 // BUTTONS
 export { default as Button} from './buttons/Button.js'
 
+// CARDS
+export { default as ProjectCard} from './cards/ProjectCard.js'
+
+
 // UNSUBSCRIBED
-export { default as ProtectedRoutes} from './ProtectedRoutes.js'
 export { default as Spinner} from './Spinner.js'

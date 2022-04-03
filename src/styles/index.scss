@@ -9,8 +9,11 @@
 @import '../components/footer/footer';
 @import '../components/buttons/button';
 @import '../components/fields/field';
+@import '../components/cards/project-card';
 
 // PAGES
 @import '../pages/home/home';
-@import '../pages/about/about';
+@import '../pages/resume/resume';
+@import '../pages/projects/projects'; 
 @import '../pages/error/error';
+@import '../pages/contact/contact';

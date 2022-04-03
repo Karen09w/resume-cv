@@ -12,14 +12,17 @@ export default function Field({
     message,
     onChangeHandler,
 }) {
+
+    if(name == 'message') return ''
     return (
         <div className="col-sm-5">
             <label htmlFor={name} className="form-label">
                 {label}
                 {required && '*'}
             </label>
-
+            
             <input
+            autoComplete='off'
                 className="form-control"
                 type={type}
                 id={name}

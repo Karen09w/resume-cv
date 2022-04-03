@@ -1,166 +1,215 @@
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Regular.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Regular.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
 
+// League Spartan
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Italic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Italic.woff') format('woff');
-    font-weight: normal;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-ThinItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-ThinItalic.woff') format('woff');
-    font-weight: 100;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Thin.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Thin.woff') format('woff');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-ExtraLight.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-ExtraLight.woff') format('woff');
-    font-weight: 200;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-ExtraLightItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-ExtraLightItalic.woff') format('woff');
-    font-weight: 200;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Light.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Light.woff') format('woff');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-LightItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-LightItalic.woff') format('woff');
-    font-weight: 300;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Medium.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Medium.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-MediumItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-MediumItalic.woff') format('woff');
-    font-weight: 500;
-    font-style: italic;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-SemiBold.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-SemiBold.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-SemiBoldItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-SemiBoldItalic.woff') format('woff');
-    font-weight: 600;
-    font-style: italic;
-    font-display: swap;
-}
-
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Bold.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Bold.woff') format('woff');
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Bold.woff') format('woff');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-BoldItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-BoldItalic.woff') format('woff');
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Black.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Medium.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Light.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-ExtraLight.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-Thin.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'League Spartan';
+    src: url('../../assets/fonts/League-Spartan/LeagueSpartan-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/League-Spartan/LeagueSpartan-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+// 
+
+// Nunito Sans
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-BlackItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-BlackItalic.woff') format('woff');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-Black.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-Bold.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraBold.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-BoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-BoldItalic.woff') format('woff');
     font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-ExtraBold.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-ExtraBold.woff') format('woff');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.woff') format('woff');
-    font-weight: 800;
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraBoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraBoldItalic.woff') format('woff');
+    font-weight: bold;
     font-style: italic;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-Black.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-Black.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraLight.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraLight.woff') format('woff');
+    font-weight: 200;
     font-style: normal;
     font-display: swap;
 }
 
 @font-face {
-    font-family: 'Montserrat';
-    src: url('../../assets/fonts/Montserrat/Montserrat-BlackItalic.woff2') format('woff2'),
-        url('../../assets/fonts/Montserrat/Montserrat-BlackItalic.woff') format('woff');
-    font-weight: 900;
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraLightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-ExtraLightItalic.woff') format('woff');
+    font-weight: 200;
     font-style: italic;
     font-display: swap;
 }
 
-// ROBOTO
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-Italic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-Light.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-Regular.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-LightItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-LightItalic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-SemiBold.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('../../assets/fonts/Nunito-Sans/NunitoSans-SemiBoldItalic.woff2') format('woff2'),
+        url('../../assets/fonts/Nunito-Sans/NunitoSans-SemiBoldItalic.woff') format('woff');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+
+// 
+
+// @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');

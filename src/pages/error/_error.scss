@@ -6,6 +6,9 @@
     flex-direction: column;
     a {
         margin-bottom: 1rem;
+        cursor: pointer;
+        font-size: 3rem;
+        text-transform: capitalize;
     }
     img {
         width: 30%;

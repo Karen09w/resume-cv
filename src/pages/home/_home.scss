@@ -1,10 +1,115 @@
-.portfolio {
+.showcase {
+    padding: 6rem 0 3rem;
+    overflow: hidden;
+    &-center {
+        display: grid;
+        align-items: center;
+        grid-gap: 3rem;
+        width: 100%;
+        margin: 0 auto;
+        padding-right: 0.75rem;
+        padding-left: 0.75rem;
+    }
+    .avatar {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-top: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+    }
+
+    .btns-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1rem 3%;
+    }
     &-title {
-        color: red;
+        margin-bottom: 0.5rem;
+    }
+    &-description {
+        margin-bottom: 0.2rem;
+    }
+    &-text {
+        line-height: 1.6em;
+        font-weight: 300;
+        font-size: fontSize(lg);
+        margin-bottom: 1.8rem;
+        max-width: 25rem;
+        &::first-letter {
+            text-transform: capitalize;
+        }
     }
 }
-.about {
-    &-title {
-        color: green;
+
+@media screen and (min-width: 768px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+
+        &-center {
+            flex: 1;
+            align-self: center;
+            // justify-self: center;
+            // display: flex;
+        }
+
+        &-center {
+            // margin-top: -7rem;
+            grid-template-columns: 1.1fr 1fr;
+            .avatar {
+                order: 1;
+            }
+            .info {
+                order: 2;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        .btns-wrapper {
+            margin-left: -1rem;
+        }
+    }
+}
+
+.showcase{
+    &-center {
+
+        @include mq(576px) {
+            max-width: 540px; // 36
+        }
+        @include mq(768px) {
+            max-width: 720px; // 48
+        }
+        @include mq(992px) {
+            max-width: 660px; 
+        }
+        @include mq(1200px) {
+            max-width: 840px; // 60
+        }
+        @include mq(1400px) {
+            max-width: 1020px; // 80
+        }
+        @include mq(1920px) {
+            max-width: mw(xl); //full hd
+        }
+        @include mq(2560px) {
+            max-width: 1500px; //2k
+        }
+        @include mq(3840px) {
+            max-width: 2400px; //4k
+        }
     }
 }

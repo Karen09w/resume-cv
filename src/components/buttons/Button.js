@@ -1,9 +1,11 @@
-import React,{useState} from "react";
+import React, { useState,useEffect } from "react";
+import { motion } from "framer-motion";
 
-export default function RippleButton({ className, children,onClick=()=>{} }) {
+export default function RippleButton({ className, children, onClick = () => {},index = '0.5' }) {
 
+    
     const createRipple = (event) => {
-        if(event.type === 'keydown' && event.keyCode !== 32 )return 
+        if (event.type === "keydown" && event.keyCode !== 32) return;
 
         const button = event.currentTarget;
         const btnRect = button.getBoundingClientRect();
@@ -25,7 +27,8 @@ export default function RippleButton({ className, children,onClick=()=>{} }) {
     };
 
     return (
-        <button
+        <motion.button
+        initial={{opacity: 0,x:'50%'}} animate={{opacity: 1, x:'0'}}  transition={{delay: index }}
             className={`btn ${className ? className : ""}`}
             type="submit"
             onClick={onClick}
@@ -33,6 +36,6 @@ export default function RippleButton({ className, children,onClick=()=>{} }) {
             onKeyDown={createRipple}
         >
             {children}
-        </button>
+        </motion.button>
     );
 }
