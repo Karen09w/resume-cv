@@ -17,7 +17,7 @@ export default function footer() {
                         <div className="info">
                             <h6 className="info-title">email</h6>
                             <a href="#" className="info-link">
-                                johnwilson7mc@gmai.com
+                                example@gmail.com
                             </a>
                         </div>
 

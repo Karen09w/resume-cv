@@ -106,7 +106,7 @@ export default function Contact() {
                             <div className="info">
                                 <h6 className="info-title">email</h6>
                                 <a href="#" className="info-link">
-                                    johnwilson7mc@gmai.com
+                                    example@gmai.com
                                 </a>
                             </div>
                         </div>
